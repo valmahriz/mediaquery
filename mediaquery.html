@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Assignment</title>
+</head>
+<style>
+    body{
+        background-color: lightblue;
+    }
+    /* Media Query Screen size- 1440PX */
+    @media (max-width: 1440px) {
+        body{
+            background-color: green;
+        }
+        h1::after{
+            content: 'This is a Media Query demo page.';
+        }
 
+    }
+    @media (max-width: 1024px) {
+        body{
+            background-color: brown;
+        }
+        h1::after{
+            content: 'This is a Media Query demo page.Screen Size:1020px';
+        }
+    }
+    @media (max-width: 768px) {
+        body{
+            background-color: lightblue;
+        }
+        h1::after{
+            content: 'This is a Media Query demo page.Screen Size:768px';
+        }
+    }
+    @media (max-width: 425px) {
+        body{
+            background-color: rgb(158, 15, 39);
+        }
+        h1::after{
+            content: 'This is a Media Query demo page.Screen Size:425px';
+        }
+    }
+</style>
+<body>
+    <h1></h1>
+</body>
+</html>
